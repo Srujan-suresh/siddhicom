@@ -377,7 +377,7 @@ label {
 }
 .menu-area::before {
     position: absolute;
-    background:  #d29751;
+    background:  lightgray;
     right: 0;
     width: 70%;
     height: 89px;

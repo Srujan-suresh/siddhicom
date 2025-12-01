@@ -5,7 +5,7 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Relxtower - Multipurpose Business Landing Page Template</title>
+        <title>Siddhi buildcon - Index Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
@@ -36,10 +36,53 @@
                         <div class="col-lg-6 d-none d-lg-block">
                             <div class="header-cta text-right">
                                 <ul>
-                                    <li>
-                                        <i class="icon dripicons-phone"></i>
-                                        <span>+91 86185 14580</span>
-                                    </li>
+                             <li class="phone-item">
+    <a href="tel:+918618514580" class="phone-link">
+        <i class="icon dripicons-phone bold-phone"></i>
+        <span class="phone-number">+91 86185 14580</span>
+    </a>
+</li>
+
+
+<style>/* Grey phone icon */
+/* Make link clickable */
+.phone-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Same size icon but grey + bold effect */
+.bold-phone {
+    font-size: 18px;  /* same as your original size */
+    font-weight: 900; /* ensures thick rendering if supported */
+
+    color: #000;
+    /* Bold effect for icon fonts */
+    text-shadow: 
+        0.8px 0 0 currentColor,
+        -0.8px 0 0 currentColor,
+        0 0.8px 0 currentColor,
+        0 -0.8px 0 currentColor;
+}
+
+/* Zoom animation on phone number */
+.phone-number {
+    display: inline-block;
+    animation: zoomInOut 1.5s infinite ease-in-out;
+    font-weight: 600;
+    color: #000;
+}
+
+@keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+
+</style>
                                     <!-- <li>
                                         <i class="icon dripicons-phone"></i>
                                         <span>+91                                     7019587956</span>
@@ -64,7 +107,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="img/logo/logo.png" alt="logo"></a>
+                                    <a href="index.html"><img src="images/SIDDHI BUILDCON.png" style="width: 131px;height: 74px;" alt="logo"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-9">
@@ -87,7 +130,9 @@
 												<ul>													
 													<li><a href="pricing.html">Pricing</a></li>
 													<!-- <li><a href="team.html">Team</a></li> -->
-													<li><a href="gallery.html">Gallery</a></li>
+
+													<!-- <li><a href="gallery.html">Gallery</a></li> -->
+
 												</ul>
 											</li>
 											<!-- <li><a href="blog.html">Blog</a></li> -->
@@ -193,6 +238,171 @@
                
             </section>
             <!-- slider-area-end -->
+
+
+
+<section id="services" class="services-area">
+
+    <div class="section-title text-center">
+        <br><br><br>
+        <span style="font-size: x-large;">Our Services</span>
+        <h2>What We Do</h2>
+    </div>
+
+    <div class="services-grid">
+
+        <!-- Card 1 -->
+        <a href="services.html" class="service-card">
+            <img src="images/resedential.jpeg" alt="">
+            <div class="card-overlay">
+                <h4>Residential Construction</h4>
+                <span class="arrow">→</span>
+            </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="services.html" class="service-card">
+            <img src="images/commercial.jpeg" alt="">
+            <div class="card-overlay">
+                <h4>Commercial Construction</h4>
+                <span class="arrow">→</span>
+            </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="services.html" class="service-card">
+            <img src="images/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-min.jpg" alt="">
+            <div class="card-overlay">
+                <h4>Interior Design & Execution</h4>
+                <span class="arrow">→</span>
+            </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="services.html" class="service-card">
+            <img src="images/industrial.jpeg" alt="">
+            <div class="card-overlay">
+                <h4>Industrial Building Construction</h4>
+                <span class="arrow">→</span>
+            </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="services.html" class="service-card">
+            <img src="images/public.jpeg" alt="">
+            <div class="card-overlay">
+                <h4>Public & Institutional Buildings</h4>
+                <span class="arrow">→</span>
+            </div>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="services.html" class="service-card">
+            <img src="images/recreational.jpeg" alt="">
+            <div class="card-overlay">
+                <h4>Recreational & Open Spaces</h4>
+                <span class="arrow">→</span>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+
+<style>.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* Entire card is clickable */
+.service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 260px;
+    transition: transform .3s ease;
+    text-decoration: none;   /* Remove underline */
+    color: white;            /* White text */
+}
+
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+/* Zoom effect */
+.service-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Overlay */
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-overlay h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Arrow style */
+.arrow {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    transition: margin-right .3s;
+}
+
+/* Move arrow slightly on hover */
+.service-card:hover .arrow {
+    margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			<!-- about-area -->
             <section id="about" class="about-area about-p pt-120 pb-120 p-relative">
                 <div class="container">
@@ -215,8 +425,8 @@
 
     <p>
         Siddhi Buildcon is a Bangalore-based construction company offering complete end-to-end 
-        building solutions. We specialize in residential and commercial construction, interior 
-        design and execution, industrial buildings, public infrastructure, and modern recreation 
+        building solutions. We specialize in residential construction,commercial construction, interior 
+        design and execution, industrial buildings, public infrastructure, and modern recreational 
         spaces. As a new-age construction firm, we combine engineering expertise with transparent 
         project management to deliver structures that are durable, functional, and aesthetically 
         refined.
@@ -471,7 +681,7 @@
         </div>
 
         <h3>Our Commitment:</h3>
-        <h2>Quality • Integrity • Reliability</h2>
+        <h2>Quality • Trust • Innovation</h2>
 
         <div class="choose-btn mt-30">
             <a href="#" class="btn">Contact Us</a>
@@ -556,93 +766,6 @@
 </style>
 
 
-<section id="services" class="services-area">
-
-    <div class="section-title text-center">
-        <br>
-        <span style="font-size: x-large;">Our Services</span>
-        <h2>What We Do</h2>
-    </div>
-
-    <div class="swiper mySwiper services-slider">
-        <div class="swiper-wrapper">
-
-            <!-- Slide 1 -->
-            <div class="swiper-slide">
-                <div class="s-single-services">
-                    <div class="services-image"><img src="images/resedential.jpeg" style="height: 200px;width: 400px !important;"   alt=""></div>
-                    <div class="second-services-content2">
-                        <h5>Residential Construction</h5>
-                        <p>From individual houses to premium villas and apartment buildings.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="swiper-slide">
-                <div class="s-single-services">
-                    <div class="services-image"><img src="images/commercial.jpeg" alt=""></div>
-                    <div class="second-services-content2">
-                        <h5>Commercial Construction</h5>
-                        <p>We construct modern offices, retail complexes, and commercial centers.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="swiper-slide">
-                <div class="s-single-services">
-                    <div class="services-image"><img src="images/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-min.jpg" alt=""></div>
-                    <div class="second-services-content2">
-                        <h5>Interior Design & Execution</h5>
-                        <p>Personalized interior design solutions from concept to creation.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="swiper-slide">
-                <div class="s-single-services">
-                    <div class="services-image"><img src="images/industrial.jpeg" alt=""></div>
-                    <div class="second-services-content2">
-                        <h5>Industrial Building Construction</h5>
-                        <p>Warehouses, manufacturing units, and logistic facilities built to last.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 5 -->
-            <div class="swiper-slide">
-                <div class="s-single-services">
-                    <div class="services-image"><img src="images/public.jpeg" alt=""></div>
-                    <div class="second-services-content2">
-                        <h5>Public & Institutional Buildings</h5>
-                        <p>Safe, accessible, and sustainable public infrastructure.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 6 -->
-            <div class="swiper-slide">
-                <div class="s-single-services">
-                    <div class="services-image"><img src="images/recreational.jpeg" alt=""></div>
-                    <div class="second-services-content2">
-                        <h5>Recreation & Open Spaces</h5>
-                        <p>Parks, playgrounds, and recreational zones designed for communities.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</section>
 
 
 <!-- Swiper JS -->
@@ -828,6 +951,18 @@
             </div>
         </div>
 
+
+<style>table tr td img {
+  width: 150px;
+  height: 130px;
+  object-fit: cover; /* Keeps image proportion but fills the box */
+  display: block;
+  margin-top: 5px;
+}
+</style>
+
+
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="availability-section">
@@ -845,32 +980,172 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>1</td><td>Cement</td><td>Priya Maha Cement, ACC</td><td>Ramco, Birla Shakthi</td><td>ZUARI, Ultratech</td><td>Birla super/Ultratech</td><td>Ultratech</td></tr>
-                                <tr><td>2</td><td>Steel</td><td>Gopal, Bhulwalka</td><td>Kamdhenu/Meenakshi Prime Gold, Sunvik TMT</td><td>SK TMT, JSW, Indus</td><td>SK TMT, JSW, Indus</td><td>SK TMT, JSW, Indus</td></tr>
-                                <tr><td>3</td><td>Walls</td><td>6" and 4" Blocks(32 & 30)</td><td>6" and 4" Blocks(32 & 30)</td><td>6" and 4" Blocks(36 & 30)</td><td>6" and 4" Blocks(42 & 34)</td><td>6" and 4" Blocks(APCO Blocks)</td></tr>
+                                <tr>
+  <td>
+    1<br>
+  </td>
+  <td>
+    Cement<br>
+  </td>
+  <td>
+    Priya Cement, ACC<br>
+    <img src="images/priyacement.jpg" alt="Image">
+  </td>
+  <td>
+    Ramco, Birla Shakthi<br>
+    <img src="images/ramco_cements.jpeg" alt="Image">
+  </td>
+  <td>
+    ZUARI, Ultratech<br>
+    <img src="images/Ultratech_acaeb26d3d.webp" alt="Image">
+  </td>
+  <td>
+    Birla super / Ultratech<br>
+    <img src="images/Ultratech_acaeb26d3d.webp" alt="Image">
+  </td>
+  <td>
+    Ultratech<br>
+    <img src="images/Ultratech_acaeb26d3d.webp" alt="Image">
+  </td>
+</tr>
+
+                      <tr>
+  <td>
+    2<br>
+  </td>
+  <td>
+    Steel<br>
+  </td>
+  <td>
+    Gopal, Bhulwalka<br>
+    <img src="images/gopala-tmt-bars-meenakshi-construction-suppliers-bengaluru.jpg" alt="Image">
+  </td>
+  <td>
+    Kamdhenu/Meenakshi Prime Gold, Sunvik TMT<br>
+    <img src="images/mcs-sunvik-steel-tmt-bars-suppliers-dealers-bengaluru.jpg" alt="Image">
+    <br>
+    <img src="images/meenkashi.png" alt="Image">
+  </td>
+  <td>
+    SK TMT, JSW, Indus<br>
+    <img src="images/sktmt.png" alt="Image">
+    <br>
+    <img src="images/jswlogoo.png" alt="Image">
+    <br>
+    <img src="images/indus.jpeg" alt="Image">
+  </td>
+  <td>
+    SK TMT, JSW, Indus<br>
+    <img src="images/sktmt.png" alt="Image">
+    <br>
+    <img src="images/jswlogoo.png" alt="Image">
+    <br>
+    <img src="images/indus.jpeg" alt="Image">
+  </td>
+  <td>
+    SK TMT, JSW, Indus<br>
+    <img src="images/sktmt.png" alt="Image">
+    <br>
+    <img src="images/jswlogoo.png" alt="Image">
+    <br>
+    <img src="images/indus.jpeg" alt="Image">
+  </td>
+</tr>
+
+                                <tr><td>3</td><td>Walls</td><td>6" and 4" Blocks(32 & 30)<br>
+    <img src="images/CELLULAR BLOCKS.png" alt="Image"></td><td>6" and 4" Blocks(32 & 30)<br>
+    <img src="images/CELLULAR BLOCKS.png" alt="Image"></td><td>6" and 4" Blocks(36 & 30)<br>
+    <img src="images/CELLULAR BLOCKS.png" alt="Image"></td><td>6" and 4" Blocks(42 & 34)<br>
+    <img src="images/CELLULAR BLOCKS.png" alt="Image"></td><td>6" and 4" Blocks(APCO Blocks)<br>
+    <img src="images/CELLULAR BLOCKS.png" alt="Image"></td></tr>
                                 <tr><td>4</td><td>Sand</td><td>M sand</td><td>M sand</td><td>M sand</td><td>M sand</td><td>M sand</td></tr>
                                 <tr><td>5</td><td>Plastering sand</td><td>P sand</td><td>P sand</td><td>P sand</td><td>P sand</td><td>P sand</td></tr>
                                 <tr><td>6</td><td>Aggregate</td><td>20mm/12.5mm Crushed stone</td><td>20mm/12.5mm Crushed stone</td><td>20mm/12.5mm Crushed stone</td><td>20mm/12.5mm Crushed stone</td><td>20mm/12.5mm Crushed stone</td></tr>
-                                <tr><td>11</td><td>Windows</td><td>Aluminium windows 2.5 track with 5mm glass Rs 380/sft</td><td>UPVC 2.5 track with 5mm glass Rs 380/sft</td><td>UPVC 2.5 track with 5mm glass Rs 400/sft</td><td>UPVC 2.5 track with 5mm glass Rs 400/sft</td><td>Red saal frame with honne shutter windows</td></tr>
-                                <tr><td>12</td><td>Flooring tiles</td><td>Flooring tile/Granite Rs 50/sft</td><td>Flooring tile/Granite Rs 60/sft</td><td>Flooring tile/Granite Rs 80/sft</td><td>Flooring tile/Granite Rs 110/sft</td><td>Flooring tile/Granite/Smart Marble Rs 160/sft</td></tr>
+                                <tr><td>11</td><td>Windows</td><td>Aluminium windows 2.5 track with 5mm glass Rs 380/sft</td><td>UPVC 2.5 track with 5mm glass Rs 380/sft<br>
+    <img src="images/greentechh.png" alt="Image"></td><td>UPVC 2.5 track with 5mm glass Rs 400/sft<br>
+    <img src="images/greentechh.png" alt="Image"></td><td>UPVC 2.5 track with 5mm glass Rs 400/sft<br>
+    <img src="images/greentechh.png" alt="Image"></td><td>Red saal frame with honne shutter windows</td></tr>
+                                <tr><td>12</td><td>Flooring tiles</td><td>Flooring tile/Granite Rs 50/sft<br>
+    <img src="images/Kajariaa.jpg" alt="Image"></td><td>Flooring tile/Granite Rs 60/sft<br>
+    <img src="images/Kajariaa.jpg" alt="Image"></td><td>Flooring tile/Granite Rs 80/sft<br>
+    <img src="images/Kajariaa.jpg" alt="Image"></td><td>Flooring tile/Granite Rs 110/sft<br>
+    <img src="images/Kajariaa.jpg" alt="Image"><td>Flooring tile/Granite/Smart Marble Rs 160/sft<br>
+    <img src="images/Kajariaa.jpg" alt="Image"></td></tr>
                                 <tr><td>13</td><td>Dado tiles</td><td>Bathroom 7' ht 35/sft, kitchen 2' ht 35/sft</td><td>Bathroom 7' ht 40/sft, kitchen 2' ht 40/sft</td><td>Bathroom 10' ht Rs 45/sft, kitchen 3' ht Rs 45/sft</td><td>Bathroom 10' ht Rs 55/sft, kitchen 2' ht Rs 55/sft</td><td>Bathroom 10' ht Rs 90/sft, kitchen 2' ht Rs 90/sft</td></tr>
                                 <tr><td>14</td><td>Staircase Granites</td><td>Sadaralli 60/sft</td><td>Sadaralli 70/sft</td><td>Sadaralli/Steel grey 80/sft</td><td>Sadaralli/other Granite 100/sft</td><td>Granite 130/sft</td></tr>
                                 <tr><td>15</td><td>Staircase Railing</td><td>MS railing as per Architecture Design</td><td>MS railing as per Architecture Design</td><td>MS railing as per Architecture Design</td><td>SS Railing without Glass</td><td>Wooden Railings with Glass</td></tr>
                                 <tr><td>16</td><td>Window Grill</td><td>by using 10mm MS Rod</td><td>by using 12mm MS Rod</td><td>Round/Hexagonal/Square 12mm Rod</td><td>Round/Hexagonal/Square 12mm Rod</td><td>Round/Square 12mm Rod</td></tr>
                                 <tr><td>17</td><td>Balcony/ Parking tile</td><td>Tile 35/sft</td><td>Tile 40/sft</td><td>Tile 45/sft</td><td>Tile 55/sft</td><td>Tile 85/sft</td></tr>
-                                <tr><td>18</td><td>Internal paint</td><td>Birla/Asian 2Coat Putty + 2Coat Tractor Emulsion</td><td>Birla/Asian 2Coat Putty + 2Coat Tractor Emulsion</td><td>Birla/Asian 2Coat Putty + 2Coat Tractor Emulsion</td><td>Birla/Asian 2Coat Putty + 2Coat Premium Emulsion</td><td>Birla/Asian 3Coat Putty + 2Coat Royale Emulsion</td></tr>
+                                <tr><td>18</td><td>Internal paint</td><td>Birla/Asian 2Coat Putty + 2Coat Tractor Emulsion<br>
+    <img src="images/Asianpaint.png" alt="Image"></td><td>Birla/Asian 2Coat Putty + 2Coat Tractor Emulsion<br>
+    <img src="images/Asianpaint.png" alt="Image"></td><td>Birla/Asian 2Coat Putty + 2Coat Tractor Emulsion<br>
+    <img src="images/Asianpaint.png" alt="Image"></td><td>Birla/Asian 2Coat Putty + 2Coat Premium Emulsion<br>
+    <img src="images/Asianpaint.png" alt="Image"></td><td>Birla/Asian 3Coat Putty + 2Coat Royale Emulsion<br>
+    <img src="images/Asianpaint.png" alt="Image"></td></tr>
                                 <tr><td>19</td><td>External Paint</td><td>Ace Exterior Emulsion - Asian</td><td>Ace Exterior Emulsion - Asian</td><td>Ace Exterior Emulsion - Asian</td><td>Apex Exterior Emulsion - Asian</td><td>Apex Ultima Exterior Emulsion - Asian</td></tr>
                                 <tr><td>20</td><td>MS and Wood Paint</td><td>Enamel Paint</td><td>Enamel Paint</td><td>MS & internal Shutter Enamel, Pooja & Main Door Polish</td><td>MS & internal Shutter Enamel, Pooja & Main Door Polish</td><td>MS & internal Shutter Enamel, Pooja & Main Door Polish</td></tr>
                                 <tr><td>21</td><td>Kitchen Slab</td><td>30mm granite 150/sft</td><td>30mm granite 160/sft</td><td>30mm granite 200/sft</td><td>32mm granite 220/sft</td><td>Quartz 350/sft</td></tr>
                                 <tr><td>22</td><td>Kitchen Basin</td><td>SS Basin 3000/no</td><td>SS Basin 3000/no</td><td>SS Basin 4000/no</td><td>SS Basin 6000/no</td><td>Basin 12000/no</td></tr>
                                 <tr><td>23</td><td>Bathroom Accessories</td><td>Rs 18,000/Bathroom</td><td>Rs 20,000/Bathroom</td><td>Rs 25,000/Bathroom</td><td>Rs 30,000/Bathroom</td><td>Rs 50,000/Bathroom</td></tr>
-                                <tr><td>24</td><td>Plumbing Pipes & Fittings</td><td>Astral/Ashirvad</td><td>Astral/Ashirvad</td><td>Astral, Ashirvad, Supreme</td><td>Astral, Ashirvad, Supreme</td><td>Astral, Ashirvad, Supreme</td></tr>
+                                <tr><td>24</td><td>Plumbing Pipes & Fittings</td><td>Astral/Ashirvad<br>
+    <img src="images/ashirvad.jpg" alt="Image"></td><td>Astral/Ashirvad<br>
+    <img src="images/ashirvad.jpg" alt="Image"></td><td>Astral, Ashirvad, Supreme<br>
+    <img src="images/ashirvad.jpg" alt="Image"><br>
+    <img src="images/supreme.png" alt="Image"></td><td>Astral, Ashirvad, Supreme<br>
+    <img src="images/ashirvad.jpg" alt="Image"><br>
+    <img src="images/supreme.png" alt="Image"></td><td>Astral, Ashirvad, Supreme<br>
+    <img src="images/ashirvad.jpg" alt="Image"><br>
+    <img src="images/supreme.png" alt="Image"></td></tr>
                                 <tr><td>25</td><td>Overhead Tank (1000 Ltr)</td><td>Ganga, Kaveri Double Layered Rs 7/Ltr</td><td>Ganga, Kaveri Double Layered Rs 7/Ltr</td><td>Ganga, Kaveri Triple Layered Rs 7/Ltr</td><td>Ganga, Kaveri Triple Layered Rs 7/Ltr</td><td>Syntax Triple Layered Rs 12/Ltr</td></tr>
-                                <tr><td>26</td><td>Electrical Wire</td><td>Finolex Fireproof</td><td>Finolex Fireproof</td><td>Finolex Fireproof</td><td>Finolex Fireproof</td><td>Polycab Fireproof</td></tr>
-                                <tr><td>28</td><td>Waterproofing</td><td>Dr. Fixit</td><td>Dr. Fixit</td><td>Dr. Fixit</td><td>Fosroc Brush Bond</td><td>Fosroc Brush Bond</td></tr>
-                                <tr><td>29</td><td>Under Ground Sump</td><td>6" Block work Capacity 8000 ltrs</td><td>6" Block work Capacity 8000 ltrs</td><td>8" Block work Capacity 8000 ltrs</td><td>6" or 8" Block work Capacity 8000 ltrs</td><td>Retaining wall Capacity 12000 ltrs</td></tr>
-                                <tr><td>30</td><td>Floor to Floor Finish Level</td><td>10ft Clear Height</td><td>10ft Clear Height</td><td>10ft Clear Height</td><td>10ft Clear Height</td><td>10ft Clear Height</td></tr>
-                                <tr><td>31</td><td>Plinth Height from Road Level</td><td>Car park 1.5ft, Building 2ft</td><td>Car park 1.5ft, Building 2ft</td><td>Car park 1.5ft, Building 2ft</td><td>Car park 1.5ft, Building 2ft</td><td>Car park 1.5ft, Building 2ft</td></tr>
+                                <tr>
+  <td>
+    26<br>
+  </td>
+  <td>
+    Electrical Wire<br>
+  </td>
+  <td>
+    Finolex Fireproof<br>
+    <img src="images/finolex-logo-png_seeklogo-289660.png" alt="Image">
+    
+  </td>
+  <td>
+    Finolex Fireproof<br>
+    <img src="images/finolex-logo-png_seeklogo-289660.png" alt="Image">
+  </td>
+  <td>
+    Finolex Fireproof<br>
+    <img src="images/finolex-logo-png_seeklogo-289660.png" alt="Image">
+    <br>
+    <img src="images/havells.webp" alt="Image">
+    <br>
+    <img src="images/kei.png" alt="Image">
+  </td>
+  <td>
+    Finolex Fireproof<br>
+    <img src="images/finolex-logo-png_seeklogo-289660.png" alt="Image">
+    <br>
+    <img src="images/havells.webp"  alt="Image">
+    <br>
+    <img src="images/kei.png" alt="Image">
+  </td>
+  <td>
+    Polycab Fireproof<br>
+    <img src="images/polycab.jpg" alt="Image">
+    <br>
+    <img src="images/havells.webp" alt="Image">
+    <br>
+    <img src="images/kei.png" alt="Image">
+  </td>
+</tr>
+
+                                <tr><td>27</td><td>Waterproofing</td><td>Dr. Fixit<br>
+    <img src="images/drfixit.jpg" alt="Image"></td><td>Dr. Fixit<br>
+    <img src="images/drfixit.jpg" alt="Image"></td><td>Dr. Fixit<br>
+    <img src="images/drfixit.jpg" alt="Image"></td><td>Fosroc Brush Bond</td><td>Fosroc Brush Bond</td></tr>
+                                <tr><td>28</td><td>Under Ground Sump</td><td>6" Block work Capacity 8000 ltrs</td><td>6" Block work Capacity 8000 ltrs</td><td>8" Block work Capacity 8000 ltrs</td><td>6" or 8" Block work Capacity 8000 ltrs</td><td>Retaining wall Capacity 12000 ltrs</td></tr>
+                                <tr><td>29</td><td>Floor to Floor Finish Level</td><td>10ft Clear Height</td><td>10ft Clear Height</td><td>10ft Clear Height</td><td>10ft Clear Height</td><td>10ft Clear Height</td></tr>
+                                <tr><td>30</td><td>Plinth Height from Road Level</td><td>Car park 1.5ft, Building 2ft</td><td>Car park 1.5ft, Building 2ft</td><td>Car park 1.5ft, Building 2ft</td><td>Car park 1.5ft, Building 2ft</td><td>Car park 1.5ft, Building 2ft</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -969,7 +1244,8 @@
             <!-- services-area-end -->
 			
             <!-- testimonial-area -->
-            <section id="testimonios" class="testimonial-area gray-bg testimonial-p pt-115 pb-185 text-center" style="background-image:url(img/testimonial/test-bg.jpg)"> 
+
+            <!-- <section id="testimonios" class="testimonial-area gray-bg testimonial-p pt-115 pb-185 text-center" style="background-image:url(img/testimonial/test-bg.jpg)"> 
     <div class="container">
         <div class="row">
             <div class="col-lg-2"></div>
@@ -983,7 +1259,6 @@
 
                 <div class="testimonial-active">
 
-                    <!-- Testimonial 1 -->
                     <div class="single-testimonial">
                         <i class="fas fa-quote-left"></i>
                         <p>
@@ -1000,7 +1275,6 @@
                         </div>
                     </div>
 
-                    <!-- Testimonial 2 -->
                     <div class="single-testimonial">
                         <i class="fas fa-quote-left"></i>
                         <p>
@@ -1017,7 +1291,6 @@
                         </div>
                     </div>
 
-                    <!-- Testimonial 3 -->
                     <div class="single-testimonial">
                         <i class="fas fa-quote-left"></i>
                         <p>
@@ -1040,7 +1313,9 @@
             <div class="col-lg-2"></div>
         </div>
     </div>
-</section>
+</section> -->
+
+
             <!-- testimonial-area-end -->
            
            
@@ -1143,7 +1418,7 @@ Yeshwanthpur, Bangalore – 560 022</p>
                                 </div>
                                 <h5>Working Hours</h5>
                                 <p>Monday to Friday 09:00 to 18:30 and <br>
-                                    Saturday we work until 15:30</p>
+                                    </p>
                             </div>
 							 <div class="single-cta pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
                                 <div class="f-cta-icon">
@@ -1306,7 +1581,7 @@ function calculateEstimate() {
             <div class="col-xl-6 col-lg-6 col-sm-6">
                 <div class="footer-widget mb-30">
                     <div class="logo mb-35">
-                        <a href="#"><img src="img/logo/logo.png" alt="logo"></a>
+                        <a href="#"><img src="images/SIDDHI BUILDCON.png" style="width: 131px;height: 74px;" alt="logo"></a>
                     </div>
                     <div class="footer-text mb-20">
                         <p>
