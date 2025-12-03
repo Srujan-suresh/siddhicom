@@ -313,7 +313,7 @@ label {
 }
 .main-menu ul li a {
 	display: block;
-	color: #000000;
+	color: #fff;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
 	padding: 34px 0;
@@ -373,11 +373,12 @@ label {
 }
 .menu-area {
     background: 
-    #3c3935;
+    #000000f4;
+
 }
 .menu-area::before {
     position: absolute;
-    background:  lightgray;
+    background:  #000000f4;
     right: 0;
     width: 70%;
     height: 89px;
@@ -600,8 +601,9 @@ label {
 	font-weight: 500;
 }
 /* 3. slider */
+
 .slider-bg {
-	min-height: 810px;
+	min-height: 510px;
 	background-position: center;
 	background-size: cover;
 	position: relative;

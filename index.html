@@ -24,28 +24,52 @@
     </head>
     <body>
         <!-- header -->
-        <header class="header-area">  
-			<div class="header-top second-header d-none d-md-block">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="wellcome-text text-center text-lg-left">
-                                <p>Welcome to Siddhi Buildcon</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-none d-lg-block">
-                            <div class="header-cta text-right">
-                                <ul>
-                             <li class="phone-item">
-    <a href="tel:+918618514580" class="phone-link">
-        <i class="icon dripicons-phone bold-phone"></i>
-        <span class="phone-number">+91 86185 14580</span>
-    </a>
-</li>
+     <header class="header-area">  
+    <div class="header-top second-header">
+        <div class="container">
+            <div class="row align-items-center">
 
+                <!-- Left Column: Welcome Text -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="wellcome-text text-center text-lg-left">
+                        <p>Welcome to Siddhi Buildcon</p>
+                    </div>
+                </div>
 
-<style>/* Grey phone icon */
-/* Make link clickable */
+                <!-- Right Column: Contact Info -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="header-cta text-center text-lg-right">
+                        <ul>
+                            <li class="phone-item">
+                                <a href="tel:+918618514580" class="phone-link">
+                                    <span class="phone-icon-wrap">
+                                        <i class="icon dripicons-phone bold-phone"></i>
+                                    </span>
+                                    <span class="phone-number">+91 86185 14580 / +91 70195 87956</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="icon dripicons-mail"></i>
+                                <span>siddhibuildconninfra@gmail.com</span>
+                            </li>
+
+                            <!-- Optional: working hours -->
+                            <!-- <li>
+                                <i class="icon dripicons-clock"></i>
+                                <span>Mon-Fri: 8am - 7pm</span>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<style>
+/* Horizontal alignment */
 .phone-link {
     display: flex;
     align-items: center;
@@ -53,21 +77,26 @@
     color: inherit;
 }
 
-/* Same size icon but grey + bold effect */
-.bold-phone {
-    font-size: 18px;  /* same as your original size */
-    font-weight: 900; /* ensures thick rendering if supported */
-
-    color: #000;
-    /* Bold effect for icon fonts */
-    text-shadow: 
-        0.8px 0 0 currentColor,
-        -0.8px 0 0 currentColor,
-        0 0.8px 0 currentColor,
-        0 -0.8px 0 currentColor;
+/* Wrapper that rotates the icon */
+.phone-icon-wrap {
+    display: inline-flex;
+    transform: rotate(90deg);   /* forces upright orientation */
+    margin-right: 6px;          /* spacing from number */
 }
 
-/* Zoom animation on phone number */
+/* Make icon bold / darker */
+.bold-phone {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    text-shadow:
+        0.8px 0 currentColor,
+        -0.8px 0 currentColor,
+        0 0.8px currentColor,
+        0 -0.8px currentColor;
+}
+
+/* Zoom animation */
 .phone-number {
     display: inline-block;
     animation: zoomInOut 1.5s infinite ease-in-out;
@@ -80,34 +109,17 @@
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
-
-
 </style>
-                                    <!-- <li>
-                                        <i class="icon dripicons-phone"></i>
-                                        <span>+91                                     7019587956</span>
-                                    </li> -->
-                                    <li>
-                                        <i class="icon dripicons-mail"></i>
-                                        <span>siddhibuildconandinfra@gmail.com</span>
-                                    </li>
-                                    <!-- <li>
-                                        <i class="icon dripicons-clock"></i>
-                                        <span>Mon-Fri: 8am - 7pm</span>
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>		
+
             <div id="header-sticky" class="menu-area">
+             
                 <div class="container">
                     <div class="second-menu">
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/SIDDHI BUILDCON.png" style="width: 131px;height: 74px;" alt="logo"></a>
+                                    <a href="index.html"><img src="images/logoo.jpeg" style="width: 150px;height: 103px;" alt="logo"></a>
+                                    
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-9">
@@ -126,17 +138,12 @@
                                             <li><a href="about.html">About Us</a></li>
                                             <li><a href="services.html">Services</a></li>
                                             <!-- <li><a href="apartments.html">Apartments </a></li>                                             -->
-											<li class="has-sub"><a href="#">Other Page</a>
-												<ul>													
-													<li><a href="pricing.html">Pricing</a></li>
-													<!-- <li><a href="team.html">Team</a></li> -->
+											
+                                            <li><a href="pricing.html">Pricing</a></li>   
 
-													<!-- <li><a href="gallery.html">Gallery</a></li> -->
-
-												</ul>
-											</li>
 											<!-- <li><a href="blog.html">Blog</a></li> -->
-                                            <li><a href="contact.html">Contact</a></li>                                               
+                                            <li><a href="contact.html">Contact</a></li>   
+                                                                                       
                                             <!-- <li><a href="contact.html" class="top-btn">SINGUP</a></li>                                                -->
                                         </ul>
                                     </nav>
@@ -151,238 +158,373 @@
         <!-- main-area -->
         <main>
             <!-- slider-area -->
-            <section id="home" class="slider-area fix p-relative">
-               
-                <div class="slider-active">
-				<div class="single-slider slider-bg d-flex align-items-center" style="background-image:url(img/slider/slider_img01.jpg)">
-                        <div class="container">
-                            <div class="row">							
-                                <div class="col-lg-8">
-                                    <div class="slider-content s-slider-content text-left">
-                                        <h2 data-animation="fadeInUp" data-delay=".4s">Discover  Modern<br>Building Design.</h2>
-                                         <!-- <ul data-animation="fadeInUp" data-delay=".6s">
-                                            <li>
-                                               <i class="fas fa-bed"></i>
-                                                <span>3 Bedrooms.</span>
-                                            </li>
-                                            <li>
-                                               <i class="fal fa-pencil-ruler"></i>
-                                                <span>Square Feet </span>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-bath"></i>
-                                                <span>Bedrooms</span>
-                                            </li>
-											<li>
-                                               <i class="fas fa-car"></i>
-                                                <span>Car parking</span>
-                                            </li>
-                                        </ul> -->
-                                        <div class="slider-btn mt-55">                                          
-                                            <a href="pricing.html" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Get a Quote</a>
-											<!-- <a href="https://www.youtube.com/watch?v=vKSA_idPZkc" class="video-i popup-video" data-animation="fadeInUp" data-delay=".8s" style="animation-delay: 0.8s;" tabindex="0"><i class="fas fa-play"></i></a> -->
-                                        </div>
-                                    </div>
-                                </div>
-								<div class="col-lg-4">
-									<!-- <div class="slider-price">
-										<h3>Price:</h3>
-										<h2>$1,786.80<h2>
-									</div> -->
-								</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slider slider-bg d-flex align-items-center" style="background-image:url(img/slider/slider_img02.jpg)">
-                        <div class="container">
-                            <div class="row">							
-                                <div class="col-lg-8">
-                                    <div class="slider-content s-slider-content text-left">
-                                        <h2 data-animation="fadeInUp" data-delay=".4s">Discover  Modern<br>Building Design.</h2>
-                                        <!-- <ul data-animation="fadeInUp" data-delay=".6s">
-                                            <li>
-                                               <i class="fas fa-bed"></i>
-                                                <span>3 Bedrooms.</span>
-                                            </li>
-                                            <li>
-                                               <i class="fal fa-pencil-ruler"></i>
-                                                <span>Square Feet </span>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-bath"></i>
-                                                <span>Bedrooms</span>
-                                            </li>
-											<li>
-                                               <i class="fas fa-car"></i>
-                                                <span>Car parking</span>
-                                            </li>
-                                        </ul> -->
-                                        <div class="slider-btn mt-55">                                          
-                                            <a href="pricing.html" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Get a Quote</a>
-											<!-- <a href="https://www.youtube.com/watch?v=vKSA_idPZkc" class="video-i popup-video" data-animation="fadeInUp" data-delay=".8s" style="animation-delay: 0.8s;" tabindex="0"><i class="fas fa-play"></i></a> -->
-                                        </div>
-                                    </div>
-                                </div>
-								<!-- <div class="col-lg-4">
-									<div class="slider-price">
-										<h3>Price:</h3>
-										<h2>$2,786.80<h2>
-									</div>
-								</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    
-                </div>
-               
-            </section>
-            <!-- slider-area-end -->
+           <section id="home" class="slider-area fix p-relative">
+
+    <div class="slider-active">
+
+        <!-- SLIDE 1 -->
+        
+
+        <!-- SLIDE 2 -->
 
 
+        <!-- <section id="dual-slider" class="dual-slider-area">
 
-<section id="services" class="services-area">
+    <div class="dual-slider">
 
-    <div class="section-title text-center">
-        <br><br><br>
-        <span style="font-size: x-large;">Our Services</span>
-        <h2>What We Do</h2>
-    </div>
+        <div class="dual-slide left-slide" 
+             style="background-image: url('images/house-with-sign-that-says-word-side (1).jpg');">
 
-    <div class="services-grid">
-
-        <!-- Card 1 -->
-        <a href="services.html" class="service-card">
-            <img src="images/resedential.jpeg" alt="">
-            <div class="card-overlay">
-                <h4>Residential Construction</h4>
-                <span class="arrow">→</span>
+            <div class="slide-content">
+                <h2 style="color: #fff;">Where quality<br>meets construction.</h2>
+                <a href="pricing.html" class="btn ss-btn">Get a Quote</a>
             </div>
-        </a>
 
-        <!-- Card 2 -->
-        <a href="services.html" class="service-card">
-            <img src="images/commercial.jpeg" alt="">
-            <div class="card-overlay">
-                <h4>Commercial Construction</h4>
-                <span class="arrow">→</span>
-            </div>
-        </a>
+        </div> -->
 
-        <!-- Card 3 -->
-        <a href="services.html" class="service-card">
-            <img src="images/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-min.jpg" alt="">
-            <div class="card-overlay">
-                <h4>Interior Design & Execution</h4>
-                <span class="arrow">→</span>
-            </div>
-        </a>
+        <!-- <div class="dual-slide right-slide" 
+             style="background-image: url('images/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-min.jpg');">
 
-        <!-- Card 4 -->
-        <a href="services.html" class="service-card">
-            <img src="images/industrial.jpeg" alt="">
-            <div class="card-overlay">
-                <h4>Industrial Building Construction</h4>
-                <span class="arrow">→</span>
+            <div class="slide-content">
+                <h2 style="color: #fff;">Where comfort<br>meets design.</h2>
+                <a href="pricing.html" class="btn ss-btn">Get a Quote</a>
             </div>
-        </a>
 
-        <!-- Card 5 -->
-        <a href="services.html" class="service-card">
-            <img src="images/public.jpeg" alt="">
-            <div class="card-overlay">
-                <h4>Public & Institutional Buildings</h4>
-                <span class="arrow">→</span>
-            </div>
-        </a>
-
-        <!-- Card 6 -->
-        <a href="services.html" class="service-card">
-            <img src="images/recreational.jpeg" alt="">
-            <div class="card-overlay">
-                <h4>Recreational & Open Spaces</h4>
-                <span class="arrow">→</span>
-            </div>
-        </a>
+        </div>
 
     </div>
 
 </section>
 
-
-<style>.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 40px;
+<style>.dual-slider-area {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* Entire card is clickable */
+.dual-slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ⬅ Half screen each */
+    height: 100%;
+}
+
+.dual-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.dual-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+}
+
+.slide-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.slide-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.ss-btn {
+    background: #fff;
+    color: #000;
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .dual-slider {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .dual-slide {
+        height: 60vh;
+    }
+}
+</style> -->
+        
+        
+
+        <!-- SLIDE 4 -->
+        <div class="single-slider slider-bg d-flex align-items-center"
+            style="background-image:url('images/house-with-sign-that-says-word-side\ \(1\).jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="slider-content s-slider-content text-left">
+                           <h2 data-animation="fadeInUp" data-delay=".4s" style="font-size: 42px;">
+    Building Dream Homes With<br>
+    Precision, Superior Quality &<br>
+    BIS / ISI Regulations Compliance.
+</h2>
+
+
+                            <div class="slider-btn mt-55">
+                                <a href="pricing.html" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Get a Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-slider slider-bg d-flex align-items-center"
+            style="background-image:url('images/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-min.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="slider-content s-slider-content text-left">
+                            <h2 data-animation="fadeInUp" data-delay=".4s" style="font-size: 42px;">
+Designing Interiors That Blend<br> Luxury, Comfort And Creativity.
+                            </h2>
+
+                            <div class="slider-btn mt-55">
+                                <a href="pricing.html" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Get a Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-slider slider-bg d-flex align-items-center"
+            style="background-image:url('images/skyscrapers-towering-city-center-metropolis-with-big-windows (1).jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="slider-content s-slider-content text-left">
+                            <h2 data-animation="fadeInUp" data-delay=".4s" style="font-size: 42px;">
+                                Building Commercial Environments That Elevate Business Growth.
+                            </h2>
+
+                            <div class="slider-btn mt-55">
+                                <a href="pricing.html" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Get a Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- SLIDE 3 -->
+        <div class="single-slider slider-bg d-flex align-items-center"
+            style="background-image:url('images/hospi.jpeg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="slider-content s-slider-content text-left">
+                            <h2 data-animation="fadeInUp" data-delay=".4s" style="font-size: 42px;">
+                               Engineering Vital Public Spaces With Precision And Purpose-Ensuring Comfort, Safety And Seamless Community Use.
+                            </h2>
+
+                             <div class="slider-btn mt-55">
+                                <a href="pricing.html" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Get a Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-slider slider-bg d-flex align-items-center"
+            style="background-image:url('images/large-cement-factory-with-outdoor-scene-production-line-various-equipment-surrounde\ \(1\).jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="slider-content s-slider-content text-left">
+                            <h2 data-animation="fadeInUp" data-delay=".4s" style="font-size: 42px;">
+                                Constructing Industrial Buildings Designed For<br> Performance, Safety And Scalability.
+                            </h2>
+
+                            <div class="slider-btn mt-55">
+                                <a href="pricing.html" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Get a Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div><!-- slider-active end -->
+
+</section>
+
+            
+<style>.single-slider {
+    height: 50vh; /* 50% of the viewport height */
+}
+
+</style>
+
+            <!-- slider-area-end -->
+
+
+<section id="services" class="services-area">
+
+    <!-- ROW 1: TEXT + 2 CARDS -->
+    <div class="row-one">
+
+        <!-- LEFT TEXT BLOCK -->
+        <div class="services-text">
+            <h2>What We Do</h2>
+            <p>
+                We deliver end-to-end solutions across residential, commercial, industrial,
+                and public infrastructure projects with quality and innovation.
+            </p>
+            <a href="services.html" class="know-more-btn">Know More →</a>
+        </div>
+
+        <!-- RIGHT 2 CARDS -->
+        <a href="services.html" class="service-card">
+            <img src="images/resedential.jpeg">
+            <div class="card-overlay"><h4 style="color: #fff;">Residential Construction</h4><span class="arrow">→</span></div>
+        </a>
+
+        <a href="services.html" class="service-card">
+            <img src="images/commercial.jpeg">
+            <div class="card-overlay"><h4 style="color: #fff;">Commercial Construction</h4><span class="arrow">→</span></div>
+        </a>
+
+    </div>
+
+
+    <!-- ROW 2: 3 CARDS -->
+    <div class="row-two">
+
+        <a href="services.html" class="service-card">
+            <img src="images/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-min.jpg">
+            <div class="card-overlay"><h4 style="color: #fff;">Interior Design & Execution</h4><span class="arrow">→</span></div>
+        </a>
+
+        <a href="services.html" class="service-card">
+            <img src="images/industrial.jpeg">
+            <div class="card-overlay"><h4 style="color: #fff;">Industrial Building Construction</h4><span class="arrow">→</span></div>
+        </a>
+
+        <a href="services.html" class="service-card">
+            <img src="images/public.jpeg">
+            <div class="card-overlay"><h4 style="color: #fff;">Public & Institutional Buildings</h4><span class="arrow">→</span></div>
+        </a>
+
+<a href="services.html" class="service-card"> <img src="images/recreational.jpeg" alt=""> <div class="card-overlay"> <h4 style="color: #fff;">Recreational & Open Spaces</h4> <span class="arrow">→</span> </div> </a>
+
+    </div>
+
+</section>
+
+<style>/* ROW 1 LAYOUT: TEXT + 2 IMAGE CARDS */
+.row-one {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 25px;
+    align-items: start;  /* fixes stretching issue */
+    margin-top: 50px;
+}
+
+/* LEFT TEXT BLOCK */
+.services-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+.services-text p {
+    margin: 15px 0 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.know-more-btn {
+    padding: 10px 22px;
+    border: 1.4px solid #000;
+    text-decoration: none;
+    border-radius: 25px;
+    color: black;
+    font-weight: 600;
+}
+
+/* CARDS (same style as your previous version) */
 .service-card {
     position: relative;
+    height: 260px;
     overflow: hidden;
     border-radius: 10px;
-    cursor: pointer;
-    height: 260px;
-    transition: transform .3s ease;
-    text-decoration: none;   /* Remove underline */
-    color: white;            /* White text */
+    display: block;
 }
 
 .service-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform .4s ease;
+    transition: .4s ease;
 }
-
-/* Zoom effect */
 .service-card:hover img {
     transform: scale(1.08);
 }
 
-/* Overlay */
 .card-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 18px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.card-overlay h4 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-}
-
-/* Arrow style */
 .arrow {
-    font-size: 26px;
-    font-weight: bold;
-    color: white;
-    transition: margin-right .3s;
+    font-size: 24px;
+    transition: .3s;
 }
-
-/* Move arrow slightly on hover */
 .service-card:hover .arrow {
     margin-right: 5px;
 }
 
+/* ROW 2 LAYOUT: 3 CARDS */
+.row-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .row-one {
+        grid-template-columns: 1fr;
+    }
+    .row-two {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 600px) {
-    .services-grid {
+    .row-two {
         grid-template-columns: 1fr;
     }
 }
@@ -395,6 +537,176 @@
 
 
 
+<!-- 
+
+<style>
+.section-title {
+    margin-bottom: 20px;
+}
+
+.services-area {
+    width: 90%;
+    margin: auto;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.slider-track {
+    display: flex;
+    gap: 25px;
+    transition: transform 0.6s ease;
+}
+
+.service-card {
+    flex: 0 0 calc(33.333% - 20px);
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.08);
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 26px;
+    font-weight: bold;
+    transition: transform .3s;
+}
+
+.service-card:hover .arrow {
+    transform: translateX(6px);
+}
+
+@media (max-width: 992px) {
+    .service-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .service-card {
+        flex: 0 0 100%;
+    }
+}
+</style>
+
+<section id="services" class="services-area">
+    <div class="section-title text-center">
+        <br><br><br>
+        <span style="font-size: x-large;">Our Services</span>
+        <h2>What We Do</h2>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider-track">
+            <a href="services.html" class="service-card">
+                <img src="images/resedential.jpeg" alt="">
+                <div class="card-overlay">
+                    <h4>Residential Construction</h4>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <a href="services.html" class="service-card">
+                <img src="images/commercial.jpeg" alt="">
+                <div class="card-overlay">
+                    <h4>Commercial Construction</h4>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <a href="services.html" class="service-card">
+                <img src="images/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-min.jpg" alt="">
+                <div class="card-overlay">
+                    <h4>Interior Design & Execution</h4>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <a href="services.html" class="service-card">
+                <img src="images/industrial.jpeg" alt="">
+                <div class="card-overlay">
+                    <h4>Industrial Building Construction</h4>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <a href="services.html" class="service-card">
+                <img src="images/public.jpeg" alt="">
+                <div class="card-overlay">
+                    <h4>Public & Institutional Buildings</h4>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <a href="services.html" class="service-card">
+                <img src="images/recreational.jpeg" alt="">
+                <div class="card-overlay">
+                    <h4>Recreational & Open Spaces</h4>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+const track = document.querySelector(".slider-track");
+const cards = document.querySelectorAll(".service-card");
+let index = 0;
+
+function autoSlide() {
+    let cardsPerView;
+    if (window.innerWidth <= 600) {
+        cardsPerView = 1;
+    } else if (window.innerWidth <= 992) {
+        cardsPerView = 2;
+    } else {
+        cardsPerView = 3;
+    }
+
+    index += 1;
+    if (index > cards.length - cardsPerView) {
+        index = 0;
+    }
+
+    const cardWidth = cards[0].offsetWidth + 25;
+    track.style.transform = `translateX(-${index * cardWidth}px)`;
+}
+
+setInterval(autoSlide, 2500);
+</script> 
+ -->
 
 
 
@@ -433,10 +745,12 @@
     </p>
 
     <p>
-        Whether you're building a home, developing a commercial project, or creating community-focused 
-        spaces, our team ensures meticulous planning, high-quality materials, and timely delivery. 
-        At Siddhi Buildcon, we are committed to shaping environments that inspire, support, and 
-        uplift the lives of the people who use them.
+  Whether you're building a home, developing a commercial project, or creating community-focused
+spaces, our team ensures meticulous planning, high-quality materials, and timely delivery.
+We do construction according to BIS – ISI code book regulations to ensure safety, durability, and compliance with national standards.
+At Siddhi Buildcon, we are committed to shaping environments that inspire, support, and
+uplift the lives of the people who use them.
+
     </p>
 
     <a href="#" class="btn">Get Started</a>
@@ -449,6 +763,64 @@
                 </div>
             </section>
             <!-- about-area-end -->
+
+
+             <section id="calculator" class="contact-area contact-bg pt-120 pb-120 p-relative fix" style="background-image:url('img/bg/contact_bg.jpg')">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8">
+                <div class="section-title text-center mb-80 wow fadeInDown animated" data-animation="fadeInDown" data-delay=".2s">
+                    <span>Calculator</span>
+                    <h2 style="font-size: 22px;">Estimate The Cost Of<br> Construction Of Your Dream Home</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form class="contact-form wow fadeInUp animated" data-animation="fadeInUp" data-delay=".2s" oninput="calculateEstimate()">
+                    <div class="row">
+                        <!-- Square Feet Input -->
+                        <div class="col-lg-12">
+                            <div class="contact-field p-relative c-name mb-40">
+                                <input type="number" id="sqft" placeholder="Enter square feet" min="1">
+                            </div>
+                        </div>
+
+                        <!-- Plan Dropdown -->
+                        <div class="col-lg-12">
+                            <div class="contact-field p-relative c-subject mb-40">
+                                <select id="plan" class="form-control">
+                                    <option value="1699">Rs 1699 /sft</option>
+                                    <option value="1799">Rs 1799 /sft</option>
+                                    <option value="2099">Rs 2099 /sft</option>
+                                    <option value="2299">Rs 2299 /sft</option>
+                                    <option value="2599">Rs 2599 /sft</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Estimated Amount -->
+                        <div class="col-lg-12">
+                            <div class="contact-field p-relative c-message mb-45">
+                                <h4>Estimated Amount: <span id="estimate">Rs 0</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function calculateEstimate() {
+    const sqft = parseFloat(document.getElementById('sqft').value) || 0;
+    const rate = parseFloat(document.getElementById('plan').value) || 0;
+    const estimate = sqft * rate;
+    document.getElementById('estimate').innerText = 'Rs ' + estimate.toLocaleString();
+}
+</script>
 			
 			<!-- counter-area -->
             <!-- <div class="counter-area pt-120 pb-90" style="background-image:url(img/bg/count-bg.jpg); background-size:cover;">
@@ -511,78 +883,78 @@
                         <div class="col-xl-4">
                             <div class="single-services mb-30">
                                 <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/gallery.jpg">
-                                    <img src="img/gallery/gallery.jpg" alt="img">
+									<a class="gallery-link popup-image" href="images/23311312.jpg">
+                                    <img src="images/23311312.jpg" style="height: 230px" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content">                                   
                                     <small>Explore Now</small>
-                                    <h4><a href="apartments-details.html">One Room Apartment</a></h4>                                   
+                                    <h4><a href="index.html">One Room Apartment</a></h4>                                   
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4">
                             <div class="single-services mb-30">
                                 <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/gallery02.jpg">
-                                    <img src="img/gallery/gallery02.jpg" alt="img">
+									<a class="gallery-link popup-image" href="images/looks-like-elegant-living-room-with-yellow-lights.jpg">
+                                    <img src="images/looks-like-elegant-living-room-with-yellow-lights.jpg" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content">                                   
                                      <small>Explore Now</small>
-                                    <h4><a href="apartments-details.html">Luxury Apartment</a></h4>
+                                    <h4><a href="index.html">Luxury Apartment</a></h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4">
                             <div class="single-services mb-30">
                                 <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/gallery03.jpg">
-                                    <img src="img/gallery/gallery03.jpg" alt="img">
+									<a class="gallery-link popup-image" href="images/small-living-room-house-with-oldfashioned-wooden-furniture.jpg">
+                                    <img src="images/small-living-room-house-with-oldfashioned-wooden-furniture.jpg" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content">                                   
                                     <small>Explore Now</small>
-                                    <h4><a href="apartments-details.html">Deluxe Apartment</a></h4>
+                                    <h4><a href="index.html">Deluxe Apartment</a></h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4">
                             <div class="single-services mb-30">
                                 <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/gallery.jpg">
-                                    <img src="img/gallery/gallery.jpg" alt="img">
+									<a class="gallery-link popup-image" href="images/23311312.jpg">
+                                    <img src="images/23311312.jpg" style="height: 230px;" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content">                                   
                                     <small>Explore Now</small>
-                                    <h4><a href="apartments-details.html">One Room Apartment</a></h4>                                   
+                                    <h4><a href="index.html">One Room Apartment</a></h4>                                   
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4">
                             <div class="single-services mb-30">
                                 <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/gallery02.jpg">
-                                    <img src="img/gallery/gallery02.jpg" alt="img">
+									<a class="gallery-link popup-image" href="images/looks-like-elegant-living-room-with-yellow-lights.jpg">
+                                    <img src="images/looks-like-elegant-living-room-with-yellow-lights.jpg" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content">                                   
                                      <small>Explore Now</small>
-                                    <h4><a href="apartments-details.html">Luxury Apartment</a></h4>
+                                    <h4><a href="index.html">Luxury Apartment</a></h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4">
                             <div class="single-services mb-30">
                                 <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/gallery03.jpg">
-                                    <img src="img/gallery/gallery03.jpg" alt="img">
+									<a class="gallery-link popup-image" href="images/small-living-room-house-with-oldfashioned-wooden-furniture.jpg">
+                                    <img src="images/small-living-room-house-with-oldfashioned-wooden-furniture.jpg" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content">                                   
                                     <small>Explore Now</small>
-                                    <h4><a href="apartments-details.html">Deluxe Apartment</a></h4>
+                                    <h4><a href="index.html">Deluxe Apartment</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -638,7 +1010,7 @@
                     <div class="row">
 						<div class="col-xl-6">
 							 <div class="s-about-img p-relative">
-								<img src="img/features/about_img03.png" alt="img">
+								<img src="images/house-with-sign-that-says-word-side (1).jpg" style="width: 500px;height: 500px;" alt="img">
 								</div>
 						 </div>
                         <div class="col-xl-6">
@@ -950,6 +1322,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+        <button id="downloadBtn" class="btn btn-primary mt-4">Download Table</button>
+    </div>
+</div> -->
+
 
 
 <style>table tr td img {
@@ -1426,7 +1805,7 @@ Yeshwanthpur, Bangalore – 560 022</p>
                                 </div>
                                 <h5>Message Us</h5>
                                 <p>We are always with you to solve your problem
-                                    mail us : <a href="#">siddhibuildconandinfra@gmail.com</a></p>
+                                    mail us : <a href="#">siddhibuildconninfra@gmail.com</a></p>
                             </div>
                             </div>
 							
@@ -1464,62 +1843,7 @@ Yeshwanthpur, Bangalore – 560 022</p>
             </section>
 
 
-            <section id="calculator" class="contact-area contact-bg pt-120 pb-120 p-relative fix" style="background-image:url('img/bg/contact_bg.jpg')">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-8">
-                <div class="section-title text-center mb-80 wow fadeInDown animated" data-animation="fadeInDown" data-delay=".2s">
-                    <span>Calculator</span>
-                    <h2>Estimate Your Cost</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <form class="contact-form wow fadeInUp animated" data-animation="fadeInUp" data-delay=".2s" oninput="calculateEstimate()">
-                    <div class="row">
-                        <!-- Square Feet Input -->
-                        <div class="col-lg-12">
-                            <div class="contact-field p-relative c-name mb-40">
-                                <input type="number" id="sqft" placeholder="Enter square feet" min="1">
-                            </div>
-                        </div>
-
-                        <!-- Plan Dropdown -->
-                        <div class="col-lg-12">
-                            <div class="contact-field p-relative c-subject mb-40">
-                                <select id="plan" class="form-control">
-                                    <option value="1699">Rs 1699 /sft</option>
-                                    <option value="1799">Rs 1799 /sft</option>
-                                    <option value="2099">Rs 2099 /sft</option>
-                                    <option value="2299">Rs 2299 /sft</option>
-                                    <option value="2599">Rs 2599 /sft</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Estimated Amount -->
-                        <div class="col-lg-12">
-                            <div class="contact-field p-relative c-message mb-45">
-                                <h4>Estimated Amount: <span id="estimate">Rs 0</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<script>
-function calculateEstimate() {
-    const sqft = parseFloat(document.getElementById('sqft').value) || 0;
-    const rate = parseFloat(document.getElementById('plan').value) || 0;
-    const estimate = sqft * rate;
-    document.getElementById('estimate').innerText = 'Rs ' + estimate.toLocaleString();
-}
-</script>
+           
 
 
 
@@ -1581,7 +1905,7 @@ function calculateEstimate() {
             <div class="col-xl-6 col-lg-6 col-sm-6">
                 <div class="footer-widget mb-30">
                     <div class="logo mb-35">
-                        <a href="#"><img src="images/SIDDHI BUILDCON.png" style="width: 131px;height: 74px;" alt="logo"></a>
+                        <a href="#"><img src="images/logoo.jpeg" style="width: 131px;height: 104px;" alt="logo"></a>
                     </div>
                     <div class="footer-text mb-20">
                         <p>
@@ -1657,6 +1981,43 @@ function calculateEstimate() {
             </div>
         </footer>
         <!-- footer-end -->
+
+
+        <!-- <script>
+    document.getElementById("downloadBtn").addEventListener("click", function () {
+        let table = document.querySelector("table");
+        let rows = table.querySelectorAll("tr");
+        let csv = [];
+
+        // Loop through rows to gather data
+        rows.forEach(row => {
+            let cells = row.querySelectorAll("th, td");
+            let rowArray = [];
+            cells.forEach(cell => {
+                // Clean data by removing extra spaces and line breaks
+                rowArray.push(cell.innerText.trim());
+            });
+            csv.push(rowArray.join(","));
+        });
+
+        // Convert array to string with new line between rows
+        let csvString = csv.join("\n");
+
+        // Create a Blob from the CSV string and trigger the download
+        let blob = new Blob([csvString], { type: "text/csv;charset=utf-8;" });
+        let link = document.createElement("a");
+        if (link.download !== undefined) {
+            // Create a download link for the CSV file
+            let url = URL.createObjectURL(blob);
+            link.setAttribute("href", url);
+            link.setAttribute("download", "material_rate_comparison.csv");
+            link.style.visibility = "hidden";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    });
+</script> -->
 
 
 		<!-- JS here -->

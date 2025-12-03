@@ -24,28 +24,52 @@
     </head>
     <body>
         <!-- header -->
-        <header class="header-area">  
-			<div class="header-top second-header d-none d-md-block">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="wellcome-text text-center text-lg-left">
-                                <p>Welcome to Siddhi Buildcon</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-none d-lg-block">
-                            <div class="header-cta text-right">
-                                <ul>
-                                  <li class="phone-item">
-    <a href="tel:+918618514580" class="phone-link">
-        <i class="icon dripicons-phone bold-phone"></i>
-        <span class="phone-number">+91 86185 14580</span>
-    </a>
-</li>
+       <header class="header-area">  
+    <div class="header-top second-header">
+        <div class="container">
+            <div class="row align-items-center">
 
+                <!-- Left Column: Welcome Text -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="wellcome-text text-center text-lg-left">
+                        <p>Welcome to Siddhi Buildcon</p>
+                    </div>
+                </div>
 
-<style>/* Grey phone icon */
-/* Make link clickable */
+                <!-- Right Column: Contact Info -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="header-cta text-center text-lg-right">
+                        <ul>
+                            <li class="phone-item">
+                                <a href="tel:+918618514580" class="phone-link">
+                                    <span class="phone-icon-wrap">
+                                        <i class="icon dripicons-phone bold-phone"></i>
+                                    </span>
+                                    <span class="phone-number">+91 86185 14580 / +91 70195 87956</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="icon dripicons-mail"></i>
+                                <span>siddhibuildconninfra@gmail.com</span>
+                            </li>
+
+                            <!-- Optional: working hours -->
+                            <!-- <li>
+                                <i class="icon dripicons-clock"></i>
+                                <span>Mon-Fri: 8am - 7pm</span>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<style>
+/* Horizontal alignment */
 .phone-link {
     display: flex;
     align-items: center;
@@ -53,21 +77,26 @@
     color: inherit;
 }
 
-/* Same size icon but grey + bold effect */
-.bold-phone {
-    font-size: 18px;  /* same as your original size */
-    font-weight: 900; /* ensures thick rendering if supported */
-
-    color: #000;
-    /* Bold effect for icon fonts */
-    text-shadow: 
-        0.8px 0 0 currentColor,
-        -0.8px 0 0 currentColor,
-        0 0.8px 0 currentColor,
-        0 -0.8px 0 currentColor;
+/* Wrapper that rotates the icon */
+.phone-icon-wrap {
+    display: inline-flex;
+    transform: rotate(90deg);   /* forces upright orientation */
+    margin-right: 6px;          /* spacing from number */
 }
 
-/* Zoom animation on phone number */
+/* Make icon bold / darker */
+.bold-phone {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    text-shadow:
+        0.8px 0 currentColor,
+        -0.8px 0 currentColor,
+        0 0.8px currentColor,
+        0 -0.8px currentColor;
+}
+
+/* Zoom animation */
 .phone-number {
     display: inline-block;
     animation: zoomInOut 1.5s infinite ease-in-out;
@@ -80,30 +109,15 @@
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
-
-
 </style>
-                                    <li>
-                                        <i class="icon dripicons-mail"></i>
-                                        <span>siddhibuildconandinfra@gmail.com</span>
-                                    </li>
-                                    <!-- <li>
-                                        <i class="icon dripicons-clock"></i>
-                                        <span>Mon-Fri: 8am - 7pm</span>
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>		
+	
             <div id="header-sticky" class="menu-area">
                 <div class="container">
                     <div class="second-menu">
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/SIDDHI BUILDCON.png" style="width: 131px;height: 74px;" alt="logo"></a>
+                                    <a href="index.html"><img src="images/logoo.jpeg" style="width: 150px;height: 103px;" alt="logo"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-9">
@@ -123,15 +137,8 @@
                                             <li><a href="about.html">About Us</a></li>
                                             <li><a href="services.html">Services</a></li>
                                             <!-- <li><a href="apartments.html">Apartments </a></li>                                             -->
-											<li class="has-sub"><a href="#">Other Page</a>
-												<ul>													
-													<li><a href="pricing.html">Pricing</a></li>
-													<!-- <li><a href="team.html">Team</a></li> -->
+											                                            <li><a href="pricing.html">Pricing</a></li>   
 
-													<!-- <li><a href="gallery.html">Gallery</a></li> -->
-
-												</ul>
-											</li>
 											<!-- <li><a href="blog.html">Blog</a></li> -->
                                             <li><a href="contact.html">Contact</a></li>    
 											<!-- <li><a href="contact.html" class="top-btn">SINGUP</a></li>	 -->
@@ -417,7 +424,7 @@
             <div class="col-xl-6 col-lg-6 col-sm-6">
                 <div class="footer-widget mb-30">
                     <div class="logo mb-35">
-                        <a href="#"><img src="images/SIDDHI BUILDCON.png" style="width: 131px;height: 74px;" alt="logo"></a>
+                        <a href="index.html"><img src="images/logoo.jpeg" style="width: 150px;height: 103px;" alt="logo"></a>
                     </div>
                     <div class="footer-text mb-20">
                         <p>
