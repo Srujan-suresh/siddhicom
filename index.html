@@ -1174,17 +1174,29 @@ uplift the lives of the people who use them.
                             </div>
 
      <div class="container">
-        <ul class="new_uls">
-            <li class="first-child">
-               <a href="#">
-                   <img nitro-lazy-src="https://cdn-haoeh.nitrocdn.com/DtCdzAdOiNcOdQfWOArXUYeJdoYlgSFt/assets/images/optimized/rev-de42c87/mumbai/wp-content/uploads/2022/02/0009_mumbai.png" class="alignnone ls-is-cached lazyloaded" decoding="async" nitro-lazy-empty="" id="MzQxNjoyMTI=-1" src="images/cityscape.png" style="height: 150px;"></a> <span style="font-weight: bold;font-size: large;">Bangalore</span></li>
-                      <li><img nitro-lazy-src="https://cdn-haoeh.nitrocdn.com/DtCdzAdOiNcOdQfWOArXUYeJdoYlgSFt/assets/images/optimized/rev-de42c87/mumbai/wp-content/uploads/2022/02/0007_pune.png" class=" ls-is-cached lazyloaded" decoding="async" nitro-lazy-empty="" id="MzQxODoxMDU=-1" src="images/0007_pune.webp"><span style="font-weight: bold;font-size: large;">Mysore</span></li>
-                    <li><a href="#"><img nitro-lazy-src="img/0008_thane.webp" class=" ls-is-cached lazyloaded" decoding="async" nitro-lazy-empty="" id="MzQxNzoxNDY=-1" src="images/Building.jpg" style="height: 150px;"></a><span style="font-weight: bold;font-size: large;">Tumkur</span></li>
-                  
-                      <li><img nitro-lazy-src="https://cdn-haoeh.nitrocdn.com/DtCdzAdOiNcOdQfWOArXUYeJdoYlgSFt/assets/images/optimized/rev-de42c87/mumbai/wp-content/uploads/2022/02/0006_ahemdabad.png" class=" ls-is-cached lazyloaded" decoding="async" nitro-lazy-empty="" id="MzQxOToxMTA=-1" src="images/skyline.png" style="height: 145px;"> <span style="font-weight: bold;font-size: large;">Hassan</span></li>
-                       <!-- <li><a href="#"><img nitro-lazy-src="https://cdn-haoeh.nitrocdn.com/DtCdzAdOiNcOdQfWOArXUYeJdoYlgSFt/assets/images/optimized/rev-de42c87/mumbai/wp-content/uploads/2022/02/0005_delhi.png" class=" ls-is-cached lazyloaded" decoding="async" nitro-lazy-empty="" id="MzQyMDoxNDY=-1" src="img/newimg/City.jpg">Kochin</a></li> -->
-                        </ul>
-     </div>
+    <ul class="new_uls">
+        <li class="first-child">
+            <a href="#">
+                <img nitro-lazy-src="https://cdn-haoeh.nitrocdn.com/DtCdzAdOiNcOdQfWOArXUYeJdoYlgSFt/assets/images/optimized/rev-de42c87/mumbai/wp-content/uploads/2022/02/0009_mumbai.png" class="alignnone ls-is-cached lazyloaded" decoding="async" nitro-lazy-empty="" id="MzQxNjoyMTI=-1" src="images/cityscape.png" style="height: 150px;">
+            </a> 
+            <span style="font-weight: bold;font-size: large;">Bangalore</span>
+        </li>
+        <li>
+            <img nitro-lazy-src="https://cdn-haoeh.nitrocdn.com/DtCdzAdOiNcOdQfWOArXUYeJdoYlgSFt/assets/images/optimized/rev-de42c87/mumbai/wp-content/uploads/2022/02/0007_pune.png" class="ls-is-cached lazyloaded" decoding="async" nitro-lazy-empty="" id="MzQxODoxMDU=-1" src="images/0007_pune.webp">
+            <span style="font-weight: bold;font-size: large;">Mysore</span>
+        </li>
+        <li>
+            <a href="#">
+                <img nitro-lazy-src="img/0008_thane.webp" class="ls-is-cached lazyloaded" decoding="async" nitro-lazy-empty="" id="MzQxNzoxNDY=-1" src="images/Building.jpg" style="height: 150px;">
+            </a>
+            <span style="font-weight: bold;font-size: large;">Tumkur</span>
+        </li>
+        <li>
+            <img nitro-lazy-src="https://cdn-haoeh.nitrocdn.com/DtCdzAdOiNcOdQfWOArXUYeJdoYlgSFt/assets/images/optimized/rev-de42c87/mumbai/wp-content/uploads/2022/02/0006_ahemdabad.png" class="ls-is-cached lazyloaded" decoding="async" nitro-lazy-empty="" id="MzQxOToxMTA=-1" src="images/skyline.png" style="height: 145px;">
+            <span style="font-weight: bold;font-size: large;">Hassan</span>
+        </li>
+    </ul>
+</div>
     </div> 
 </div>
 </div>
@@ -1200,7 +1212,7 @@ uplift the lives of the people who use them.
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;       /* allows wrapping on smaller screens */
+    flex-wrap: wrap;       /* allows wrapping of items */
     gap: 20px;             /* space between items */
     justify-content: center; /* optional: centers the items */
 }
@@ -1210,7 +1222,21 @@ uplift the lives of the people who use them.
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 45%; /* Each item takes up 45% of the container's width, 2 items per row */
+    margin-bottom: 20px; /* ensures some spacing at the bottom */
 }
+
+.new_uls li img {
+    height: 150px; /* You can adjust the height of the images */
+    object-fit: cover; /* keeps the aspect ratio intact while covering the space */
+}
+
+@media (max-width: 768px) {
+    .new_uls li {
+        width: 100%; /* On smaller screens, make each item take up the full width */
+    }
+}
+
 </style>
 
 
