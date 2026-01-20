@@ -42,11 +42,35 @@
                         <ul>
                             <li class="phone-item">
                                 <a href="tel:+918618514580" class="phone-link">
-                                    <span class="phone-icon-wrap">
-                                        <i class="icon dripicons-phone bold-phone"></i>
-                                    </span>
-                                    <span class="phone-number">+91 86185 14580 / +91 70195 87956</span>
-                                </a>
+    <span class="phone-icon-wrap">
+        <i class="icon dripicons-phone bold-phone"></i>
+    </span>
+    <span class="phone-number">
+        <span class="num1">+91 86185 14580</span>
+        <span class="num-separator"> / </span>
+        <span class="num2">+91 70195 87956</span>
+    </span>
+</a>
+<Style>.phone-number {
+    white-space: nowrap;
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .phone-number {
+        white-space: normal;
+    }
+
+    .num-separator {
+        display: none;
+    }
+
+    .num2 {
+        display: block;
+    }
+}
+</Style>
+
                             </li>
 
                             <li>
@@ -270,7 +294,7 @@
         
   <!-- SLIDE 1 -->
         <div class="single-slider slider-bg d-flex align-items-center"
-            style="background-image:url('images/8af32799-e09c-4bd9-bb57-153c7f71e01f.jfif'); height:400px;">
+            style="background-image:url('images/8af32799-e09c-4bd9-bb57-153c7f71e01f.jfif');">
 
 
             
@@ -417,6 +441,37 @@
     }
 }
 </style>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slides = document.querySelectorAll('.single-slider');
+    let current = 0;
+    const total = slides.length;
+    const intervalTime = 4000; // 3 seconds per slide
+    const transitionTime = 800; // 0.6s fade transition
+
+    // Set initial state
+    slides.forEach((slide, index) => {
+        slide.style.position = "absolute";
+        slide.style.top = 0;
+        slide.style.left = 0;
+        slide.style.width = "100%";
+        slide.style.opacity = index === 0 ? 1 : 0;
+        slide.style.transition = `opacity ${transitionTime}ms ease-in-out`;
+    });
+
+    // Auto-slide function
+    setInterval(() => {
+        slides[current].style.opacity = 0;          // hide current
+        current = (current + 1) % total;           // move to next
+        slides[current].style.opacity = 1;          // show next
+    }, intervalTime);
+
+});
+</script>
+
 
             
 <style>.single-slider {
@@ -1125,7 +1180,7 @@ uplift the lives of the people who use them.
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 180px;
+    bottom: 30px;
     right: 20px;
     background-color: #25D366;
     color: #fff;
